@@ -2,14 +2,14 @@ terraform {
   required_providers {
     azurerm = {
       source = "hashicorp/azurerm"
-      version = "2.88.1"
+      version = "latest"
     } 
   }
   backend "azurerm" {
     resource_group_name = "tfstate111"
     storage_account_name = "tfstatestore20111"
     container_name = "tfstate"
-    key = "terraform.tfstate"  
+    key = "terraformtfstate111"  
   }
 }
 provider "azurerm" {
